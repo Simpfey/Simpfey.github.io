@@ -29,8 +29,17 @@ function calculateAge(birthyear) {
 
 function main() {
     var element = document.getElementById('age');
+    
+    var selement = document.getElementById('stext');
 
     element.innerHTML = calculateAge(new Date("27 August 2010")) + " Years old.";
+
+    var date = new Date();
+
+    if (date.getMonth()+1 == 8 && date.getDate() == 27)
+    {
+        selement.innerHTML = "It's my birthday today!";
+    }
 
     glitch();
 }
