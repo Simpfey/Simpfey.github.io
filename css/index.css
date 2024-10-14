@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
+
+* {
+    background-color: black;
+    color: white;
+
+    font-family: "Roboto Mono", monospace;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+    font-kerning: auto;
+
+    margin: 0.3%;
+    opacity: 1;
+
+    animation-name: wakeup;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+}
+
+a {
+    text-decoration: none;
+}
+
+.larger {
+    font-size: large;
+}
+
+.smaller {
+    font-size: small;
+}
+
+.darker {
+    color: rgb(104, 104, 104);
+}
+
+.min {
+    min-width: 33%;
+}
+
+.box {
+    max-width: 33%;
+    min-height: 20%;
+    max-height: 20%;
+    height: 20%;
+    align-items: left;
+    text-align: left;
+    float: left;
+}
+
+.text {
+    border-right: 2px solid;
+    margin-right: 0;
+    padding-right: 0;
+    white-space: nowrap;
+
+    animation-name: cursor;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-timing-function: step-end;
+}
+
+@keyframes cursor {
+    50% {
+        border-color: transparent;
+    }
+}
+
+@keyframes typing {
+    from {
+        width: 0
+    } to {
+        width: 100%;
+    }
+}
+
+@keyframes wakeup {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
