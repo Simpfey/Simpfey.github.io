@@ -86,6 +86,11 @@ function calculateAge(birthDate) {
 }
 
 function main() {
+
+  if (navigator.userAgent.match(/iPhone/i)   || navigator.userAgent.match(/iPad/i)  || navigator.userAgent.match(/Android/i)) { 
+    window.location.replace("https://simpfey.github.io/m");
+  } 
+
     const ageElement = document.getElementById('age');
     const birthdayTextElement = document.getElementById('stext');
 
